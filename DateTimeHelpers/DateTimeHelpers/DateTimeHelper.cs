@@ -127,6 +127,16 @@ namespace DateTimeHelpers
         }
 
         /// <summary>
+        /// Convert UTC DateTime to unix timestamp
+        /// </summary>
+        /// <param name="localTime">UTC DateTime object</param>
+        /// <returns>unix timestamp</returns>
+        public long UTCtoUnixTime(DateTimeOffset utcTimestamp)
+        {
+            return ((utcTimestamp.Ticks - epochTicks) / TimeSpan.TicksPerSecond);
+        }
+
+        /// <summary>
         /// Get seconds from a timestamp to now
         /// </summary>
         /// <param name="timeStart">DateTime to compare</param>
