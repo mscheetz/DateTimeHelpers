@@ -149,6 +149,20 @@ namespace DateTimeHelpers
         }
 
         /// <summary>
+        /// Get unix time off-set from current unix time
+        /// </summary>
+        /// <param name="ending">Ending time</param>
+        /// <param name="seconds">Seconds to off-set</param>
+        /// <param name="iterations">Number of iterations</param>
+        /// <returns>Long of off-set time</returns>
+        public long GetFromUnixTime(long ending, long seconds, int iterations)
+        {
+            var totalSeconds = seconds * iterations;
+
+            return ending - totalSeconds;
+        }
+
+        /// <summary>
         /// Subtract hours, minutes, seconds from current UTC Time
         /// </summary>
         /// <param name="hours">Hours to subtract (optional)</param>

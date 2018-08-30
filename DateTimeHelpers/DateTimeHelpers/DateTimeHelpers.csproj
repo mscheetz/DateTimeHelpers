@@ -5,10 +5,10 @@
     <Authors>Matt Scheetz</Authors>
     <Description>Api libary for DateTime helper methods built using .net core</Description>
     <Copyright>2018 Matt Scheetz</Copyright>
-    <PackageReleaseNotes>New DateTimeOffset option for UTCtoUnixTime</PackageReleaseNotes>
+    <PackageReleaseNotes>New method GetFromUnixTime</PackageReleaseNotes>
     <PackageTags>datetime helpers .net core</PackageTags>
     <PackageProjectUrl>https://github.com/mscheetz/DateTimeHelpers</PackageProjectUrl>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
   </PropertyGroup>
 
 </Project>
