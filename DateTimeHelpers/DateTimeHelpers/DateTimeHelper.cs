@@ -68,6 +68,18 @@ namespace DateTimeHelpers
         }
 
         /// <summary>
+        /// Convert Local DateTimeOffset to unix timestamp
+        /// </summary>
+        /// <param name="localTime">Local DateTimeOffset object</param>
+        /// <returns>unix timestamp</returns>
+        public long LocalToUnixTime(DateTimeOffset localTime)
+        {
+            var utcTime = localTime.ToUniversalTime();
+
+            return UTCtoUnixTime(utcTime);
+        }
+
+        /// <summary>
         /// Convert current UTC DateTime to unix timestamp
         /// </summary>
         /// <returns>unix timestamp</returns>
@@ -108,7 +120,16 @@ namespace DateTimeHelpers
         }
 
         /// <summary>
-        /// Convert current UTC DateTime to unix timestamp milliseconds included
+        /// Convert current DateTime to unix timestamp milliseconds included
+        /// </summary>
+        /// <returns>unix timestamp</returns>
+        public long LocalTimetoUnixTimeMilliseconds(DateTime dateTime)
+        {
+            return (long)(dateTime - epoch).TotalMilliseconds;
+        }
+
+        /// <summary>
+        /// Convert current DateTimeOffset to unix timestamp milliseconds included
         /// </summary>
         /// <returns>unix timestamp</returns>
         public long LocalTimetoUnixTimeMilliseconds(DateTimeOffset dateTime)
