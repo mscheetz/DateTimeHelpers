@@ -1,2 +1,2 @@
 # DateTimeHelpers
-DateTime helpers built using .net core
+DateTime helpers built using .Net Standard  
