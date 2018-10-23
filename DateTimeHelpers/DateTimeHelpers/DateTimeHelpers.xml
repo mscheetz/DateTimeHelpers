@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DateTimeHelpers</name>
+    </assembly>
+    <members>
+        <member name="M:DateTimeHelpers.DateTimeHelper.#ctor">
+            <summary>
+            Constructor/Destructor
+            </summary>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.UnixTimeToUTC(System.Int64)">
+            <summary>
+            Convert unix timestamp to UTC DateTime
+            </summary>
+            <param name="unixTime">Unix Timestamp</param>
+            <returns>DateTime object</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.UnixTimeToUTC(System.String)">
+            <summary>
+            Convert string of unix timestamp to UTC DateTime
+            </summary>
+            <param name="unixTime">string of Unix Timestamp</param>
+            <returns>DateTime object</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.UnixTimeToLocal(System.Int64)">
+            <summary>
+            Convert unix timestamp to Local DateTime
+            </summary>
+            <param name="unixTime">Unix Timestamp</param>
+            <returns>DateTime object</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.LocalToUnixTime(System.DateTime)">
+            <summary>
+            Convert Local DateTime to unix timestamp
+            </summary>
+            <param name="localTime">Local DateTime object</param>
+            <returns>unix timestamp</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.LocalToUnixTime(System.DateTimeOffset)">
+            <summary>
+            Convert Local DateTimeOffset to unix timestamp
+            </summary>
+            <param name="localTime">Local DateTimeOffset object</param>
+            <returns>unix timestamp</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.UTCtoUnixTime">
+            <summary>
+            Convert current UTC DateTime to unix timestamp
+            </summary>
+            <returns>unix timestamp</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.UTCEndOfMinuteToUnixTime">
+            <summary>
+            Convert end of current minute to unix timestamp
+            </summary>
+            <returns>unix timestamp</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.RoundUp(System.DateTime,System.TimeSpan)">
+            <summary>
+            Round time up
+            </summary>
+            <param name="dateTime">Current time</param>
+            <param name="timeSpan">Time span to round up to</param>
+            <returns>Rouned up time</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.UTCtoUnixTimeMilliseconds">
+            <summary>
+            Convert current UTC DateTime to unix timestamp milliseconds included
+            </summary>
+            <returns>unix timestamp</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.LocalTimetoUnixTimeMilliseconds(System.DateTime)">
+            <summary>
+            Convert current DateTime to unix timestamp milliseconds included
+            </summary>
+            <returns>unix timestamp</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.LocalTimetoUnixTimeMilliseconds(System.DateTimeOffset)">
+            <summary>
+            Convert current DateTimeOffset to unix timestamp milliseconds included
+            </summary>
+            <returns>unix timestamp</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.UTCtoUnixTime(System.DateTime)">
+            <summary>
+            Convert UTC DateTime to unix timestamp
+            </summary>
+            <param name="localTime">UTC DateTime object</param>
+            <returns>unix timestamp</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.UTCtoUnixTime(System.DateTimeOffset)">
+            <summary>
+            Convert UTC DateTime to unix timestamp
+            </summary>
+            <param name="localTime">UTC DateTime object</param>
+            <returns>unix timestamp</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.CompareSeconds(System.DateTime)">
+            <summary>
+            Get seconds from a timestamp to now
+            </summary>
+            <param name="timeStart">DateTime to compare</param>
+            <returns>Double of seconds</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.GetFromUnixTime(System.Int64,System.Int64,System.Int32)">
+            <summary>
+            Get unix time off-set from current unix time
+            </summary>
+            <param name="ending">Ending time</param>
+            <param name="seconds">Seconds to off-set</param>
+            <param name="iterations">Number of iterations</param>
+            <returns>Long of off-set time</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.SubtractFromUTCNow(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Subtract hours, minutes, seconds from current UTC Time
+            </summary>
+            <param name="hours">Hours to subtract (optional)</param>
+            <param name="minutes">Minutes to subtract (optional)</param>
+            <param name="seconds">Seconds to subtract (optional)</param>
+            <returns>Resulting DateTime value</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.SubtractTime(System.DateTime,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Subtract hours, minutes, seconds from a time value
+            </summary>
+            <param name="now">Time To Subract from</param>
+            <param name="hours">Hours to subtract (optional)</param>
+            <param name="minutes">Minutes to subtract (optional)</param>
+            <param name="seconds">Seconds to subtract (optional)</param>
+            <returns>Resulting DateTime value</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.SubtractFromOffsetUTCNow(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Subtract hours, minutes, seconds from current UTC Time
+            </summary>
+            <param name="hours">Hours to subtract (optional)</param>
+            <param name="minutes">Minutes to subtract (optional)</param>
+            <param name="seconds">Seconds to subtract (optional)</param>
+            <returns>Resulting DateTimeOffset value</returns>
+        </member>
+        <member name="M:DateTimeHelpers.DateTimeHelper.SubtractOffsetTime(System.DateTimeOffset,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Subtract hours, minutes, seconds from a time value
+            </summary>
+            <param name="now">Time To Subract from</param>
+            <param name="hours">Hours to subtract (optional)</param>
+            <param name="minutes">Minutes to subtract (optional)</param>
+            <param name="seconds">Seconds to subtract (optional)</param>
+            <returns>Resulting DateTimeOffset value</returns>
+        </member>
+    </members>
+</doc>
