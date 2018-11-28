@@ -21,7 +21,15 @@ namespace DateTimeHelpers
         /// <returns>DateTime object</returns>
         public DateTime UnixTimeToUTC(long unixTime)
         {
-            var result = epoch.AddSeconds(unixTime);
+            DateTime result;
+            if (unixTime < 1000000000000)
+            {
+                result = epoch.AddSeconds(unixTime);
+            }
+            else
+            {
+                result = epoch.AddMilliseconds(unixTime);
+            }
 
             return result;
         }

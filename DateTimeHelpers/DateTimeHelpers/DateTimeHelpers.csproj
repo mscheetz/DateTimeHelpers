@@ -5,10 +5,10 @@
     <Authors>Matt Scheetz</Authors>
     <Description>Api libary for DateTime helper methods built using .Net Standard</Description>
     <Copyright>2018 Matt Scheetz</Copyright>
-    <PackageReleaseNotes>Include comments</PackageReleaseNotes>
+    <PackageReleaseNotes>Added support for unix time with milliseconds</PackageReleaseNotes>
     <PackageTags>datetime helpers .net standard</PackageTags>
     <PackageProjectUrl>https://github.com/mscheetz/DateTimeHelpers</PackageProjectUrl>
-    <Version>1.3.1</Version>
+    <Version>1.3.2</Version>
     <RepositoryUrl>https://github.com/mscheetz/DateTimeHelpers</RepositoryUrl>
   </PropertyGroup>
 
